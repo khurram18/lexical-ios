@@ -87,11 +87,11 @@ let package = Package(
 
     .target(
       name: "LexicalInlineImagePlugin",
-      dependencies: ["Lexical", "SelectableDecoratorNode"],
+      dependencies: ["Lexical", "SelectableDecoratorNode", "LexicalHTML"],
       path: "./Plugins/LexicalInlineImagePlugin/LexicalInlineImagePlugin"),
     .testTarget(
       name: "LexicalInlineImagePluginTests",
-      dependencies: ["Lexical", "LexicalInlineImagePlugin"],
+      dependencies: ["Lexical", "LexicalInlineImagePlugin", "LexicalHTML"],
       path: "./Plugins/LexicalInlineImagePlugin/LexicalInlineImagePluginTests"),
 
     .target(
